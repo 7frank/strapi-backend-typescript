@@ -1,0 +1,54 @@
+{
+  "name": "strapi-typescript-test-app",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application.",
+  "main": "./server.js",
+  "scripts": {
+    "setup": "cd admin && npm run setup",
+    "start": "node server.js",
+    "strapi": "node_modules/strapi/bin/strapi.js",
+    "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
+    "postinstall": "node node_modules/strapi/lib/utils/post-install.js",
+    "export-ts-project-interfaces": "sts ./api/ -o ../@strapi-types-project",
+    "export-ts-core-interfaces": "sts ./plugins/users-permissions/models -o ../@strapi-types-core"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "dependencies": {
+    "knex": "latest",
+    "lodash": "^4.17.5",
+    "socket.io": "^2.2.0",
+    "sqlite3": "^4.0.6",
+    "strapi": "3.0.0-alpha.25.2",
+    "strapi-hook-bookshelf": "3.0.0-alpha.25.2",
+    "strapi-hook-knex": "3.0.0-alpha.25.2"
+  },
+  "author": {
+    "name": "A Strapi developer",
+    "email": "",
+    "url": ""
+  },
+  "maintainers": [
+    {
+      "name": "A Strapi developer",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "strapi": {
+    "packageManager": "npm",
+    "uuid": "e3c3d3be-5d33-487c-ad61-f91e60b7e775",
+    "websockets": true
+  },
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "license": "MIT"
+}

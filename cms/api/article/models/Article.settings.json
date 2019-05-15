@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "articles",
+  "info": {
+    "name": "article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "content": {
+      "default": "",
+      "type": "text"
+    },
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "date": {
+      "default": "",
+      "type": "date"
+    },
+    "owner": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "background": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}
