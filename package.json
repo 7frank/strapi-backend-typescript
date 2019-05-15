@@ -1,0 +1,20 @@
+{
+  "name": "strapi-backend-typescript",
+  "version": "0.0.1",
+  "description": "contains an example model configuration for strapi & typescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd ./cms && npm start",
+    "update-models": "cd ./cms &&  npm run-script export-ts-project-interfaces && npm run-script export-ts-core-interfaces"
+  },
+  "keywords": [
+    "strapi",
+    "typescript"
+  ],
+  "author": "Frank Reimann (github.com/7frank)",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "strapi-sdk-javascript": "^0.3.1"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+
+    "strictFunctionTypes": false,
+    "strict": false,
+    "experimentalDecorators": true,
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "target": "es6",
+    "allowJs": true,
+    "jsx": "react",
+    "jsxFactory": "h",
+    "moduleResolution": "node"
+  }
+}
