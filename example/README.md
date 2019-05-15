@@ -1,0 +1,1 @@
+* testing client side of strapi/typescript use case
