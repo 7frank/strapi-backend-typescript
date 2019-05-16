@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "cd ./cms && npm start",
-    "update-models": "sts  ./cms/api  ./cms/plugins/users-permissions/models  -o ./@strapi-types"
+    "update-all":"npm run update-models && npm run update-sdk",
+    "update-models": "sts  ./cms/api  ./cms/plugins/users-permissions/models  -o ./@strapi-types",
+    "update-sdk":"ts-node src/api-gen.ts"
   },
   "keywords": [
     "strapi",
@@ -13,7 +15,10 @@
   ],
   "author": "Frank Reimann (github.com/7frank)",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "rimraf": "^2.6.3",
+    "ts-morph": "^2.1.0"
+  },
   "dependencies": {
     "strapi-sdk-javascript": "^0.3.1"
   }
