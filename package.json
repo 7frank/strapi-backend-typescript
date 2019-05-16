@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cd ./cms && npm start",
-    "update-models": "cd ./cms &&  npm run-script export-ts-project-interfaces && npm run-script export-ts-core-interfaces"
+    "update-models": "sts  ./cms/api  ./cms/plugins/users-permissions/models  -o ./@strapi-types"
   },
   "keywords": [
     "strapi",

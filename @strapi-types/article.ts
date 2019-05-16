@@ -1,3 +1,5 @@
+import { IUser } from './user';
+
 /**
  * Model definition for article
  */
@@ -6,6 +8,6 @@ export interface IArticle {
   content?: string;
   title?: string;
   date?: Date;
-  owner?: any;
+  owner?: IUser;
   background?: string;
 }

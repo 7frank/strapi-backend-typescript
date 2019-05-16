@@ -1,8 +1,7 @@
 import { StrapiObject, Strapi } from "./strapi";
 
 
-import { IArticle, } from "../@strapi-types-project";
-import { IUser } from "../@strapi-types-core";
+import { IArticle,IUser } from "../@strapi-types";
 
 /**
  * Example:
